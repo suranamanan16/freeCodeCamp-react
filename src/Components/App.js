@@ -1,14 +1,18 @@
 import React from 'react';
+import ToDoItem from "./ToDoItem.js";
 
-class App extends React.Component {
-  render(){
-    return(
-      <div>
-        <h1>Hello World</h1>
-      </div>
-
-    )
+function App(){
+  const style = function(){
+    backgroundColor: "black";
+    color: "white";
   }
+
+  return(
+    <div className="todo-box">
+      <ToDoItem />
+      <ToDoItem />
+    </div>
+  );
 }
 
 export default App;
